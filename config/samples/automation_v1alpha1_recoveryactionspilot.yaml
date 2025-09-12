@@ -1,0 +1,9 @@
+apiVersion: automation.jnnkrdb.de/v1alpha1
+kind: RecoveryActionsPilot
+metadata:
+  labels:
+    app.kubernetes.io/name: recovery-hero
+    app.kubernetes.io/managed-by: kustomize
+  name: recoveryactionspilot-sample
+spec:
+  # TODO(user): Add fields here
