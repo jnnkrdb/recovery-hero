@@ -23,7 +23,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GHP_TOKEN }}
 
-      - id: Create Temp ~/.kube dir
+      - id: KubeTempDir
         run: mkdir -p ~/.kube
 
       - name: Build and run Dev Container task
