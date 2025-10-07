@@ -1,5 +1,4 @@
 {
-  "name": "Kubebuilder DevContainer",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
     "ghcr.io/devcontainers/features/go:1": { "version": "1.24" },
@@ -7,27 +6,7 @@
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/audacioustux/devcontainers/kubebuilder:1": {},
     "ghcr.io/devcontainers/features/node:1": {},
-    //"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
     "ghcr.io/audacioustux/devcontainers/k9s:1": {}
-  },
-
-  "mounts": [
-    "source=${localEnv:HOME}${localEnv:USERPROFILE}\\.kube,target=/home/codespace/.kube,type=bind,consistency=cached"
-  ],
-
-  "runArgs": ["--network=host"],
-
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-      },
-      "extensions": [
-        "ms-kubernetes-tools.vscode-kubernetes-tools",
-        "ms-azuretools.vscode-docker"
-      ]
-    }
   }
-
-  //, "onCreateCommand": "bash .devcontainer/post-install.sh"
 }
