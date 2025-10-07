@@ -1,4 +1,4 @@
-name: PREBUILD DEVCONTAINER
+name: Devcontainer
 
 on:
   push:
